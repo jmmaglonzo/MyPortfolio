@@ -1,13 +1,13 @@
 <template>
-  <the-header />]
+  <the-header />
   <main class="mt-28">
-    <hero-section></hero-section>
+    <hero-section />
   </main>
 </template>
 
 <script>
-import TheHeader from "@/components/TheHeader.vue";
-import HeroSection from "@/components/HeroSection.vue";
+import TheHeader from "@/components/Layout/HeaderSection.vue";
+import HeroSection from "@/components/Layout/HeroSection.vue";
 export default {
   components: {
     TheHeader,

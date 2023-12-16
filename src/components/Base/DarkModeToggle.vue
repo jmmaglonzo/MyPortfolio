@@ -7,10 +7,8 @@ const toggleDark = useToggle(isDark);
 <template>
   <body class="">
     <p class="text-black dark:text-white">isDark: {{ isDark }}</p>
-    <button @click="toggleDark()" class="text-white bg-primaryRed px-8 py-2">
+    <button @click="toggleDark()" class="bg-primaryRed px-8 py-2 text-white">
       Toggle
     </button>
   </body>
 </template>
-
-<style lang="scss" scoped></style>

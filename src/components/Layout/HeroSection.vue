@@ -1,19 +1,34 @@
 <template>
   <section class="container py-20">
-    <div class="flex flex-col items-center justify-center space-y-2 text-white">
+    <div
+      class="flex flex-col items-center justify-center space-y-3 text-white md:space-y-4"
+    >
       <span class="text-sm font-semibold uppercase text-primaryRed md:text-xl"
         >crafting code with creativity</span
       >
-      <h1 class="text-2xl font-semibold uppercase md:text-7xl">
+      <h1 class="text-2xl font-semibold uppercase md:text-6xl">
         {{ typedText }}
       </h1>
-      <span class="text-md uppercase md:text-xl"> front-end developer </span>
+      <span class="text-md uppercase md:text-lg"> front-end developer </span>
+      <base-button
+        class="flex items-center gap-2 border border-secondaryGrey"
+        href="#about"
+        >about me
+        <Icon
+          icon="tdesign:chevron-down"
+          class="h-5 w-5 animate-pulse text-primaryRed"
+        />
+      </base-button>
     </div>
+    <socials-component />
   </section>
 </template>
 
 <script>
+import SocialsComponent from "@/components/Layout/SocialsComponent.vue";
+
 export default {
+  components: { SocialsComponent },
   data() {
     return {
       textToType: "John Mark Maglonzo",

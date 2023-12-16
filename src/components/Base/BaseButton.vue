@@ -1,11 +1,11 @@
 <template>
-  <button class="rounded-sm px-6 py-2 text-sm font-semibold uppercase">
+  <a
+    class="cursor-pointer rounded-sm px-6 py-2 text-center text-sm font-semibold uppercase duration-300 hover:scale-110"
+  >
     <slot></slot>
-  </button>
+  </a>
 </template>
 
 <script>
 export default {};
 </script>
-
-<style lang="scss" scoped></style>
