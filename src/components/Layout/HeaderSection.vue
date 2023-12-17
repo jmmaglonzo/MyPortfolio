@@ -4,10 +4,9 @@
       <a href="#" class="text-2xl font-bold text-white">
         <span class="text-primaryRed">Lon</span>zo
       </a>
-      <ul class="text-md hidden items-center gap-4 uppercase md:flex">
+      <ul class="text-md hidden items-center gap-8 uppercase md:flex">
         <li v-for="link in links" class="text-primaryRed">
-          #
-          <a
+          #<a
             :href="link.url"
             class="text-white duration-200 hover:text-primaryRed"
             >{{ link.name }}</a
@@ -26,7 +25,7 @@ export default {
         {
           id: Math.floor(Math.random() * 100 + 1),
           name: "Home",
-          url: "#home",
+          url: "#",
         },
         {
           id: Math.floor(Math.random() * 100 + 1),
