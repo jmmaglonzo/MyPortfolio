@@ -20,15 +20,15 @@
         />
       </base-button>
     </div>
-    <socials-component />
+    <social-links />
   </section>
 </template>
 
 <script>
-import SocialsComponent from "@/components/Layout/SocialsComponent.vue";
+import SocialLinks from "@/components/UI/SocialLinks.vue";
 
 export default {
-  components: { SocialsComponent },
+  components: { SocialLinks },
   data() {
     return {
       textToType: "John Mark Maglonzo",
