@@ -5,8 +5,9 @@
         <span class="text-primaryRed">Lon</span>zo
       </a>
       <ul class="text-md hidden items-center gap-8 uppercase md:flex">
-        <li v-for="link in links" class="text-primaryRed">
+        <li v-for="(link, index) in links" class="text-primaryRed">
           #<a
+            :key="index"
             :href="link.url"
             class="text-white duration-200 hover:text-primaryRed"
             >{{ link.name }}</a
@@ -23,23 +24,19 @@ export default {
     return {
       links: [
         {
-          id: Math.floor(Math.random() * 100 + 1),
           name: "Home",
           url: "#",
         },
         {
-          id: Math.floor(Math.random() * 100 + 1),
           name: "Skills",
           url: "#skills",
         },
 
         {
-          id: Math.floor(Math.random() * 100 + 1),
           name: "Projects",
           url: "#projects",
         },
         {
-          id: Math.floor(Math.random() * 100 + 1),
           name: "Contact",
           url: "#contact",
         },
