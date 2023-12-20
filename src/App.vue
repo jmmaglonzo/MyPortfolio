@@ -1,31 +1,34 @@
 <template>
   <the-header />
-  <main class="mt-28">
-    <hero-section />
-    <about-section />
-    <skills-section />
-    <project-section />
-    <contact-form />
+  <main>
+    <RouterView v-slot="{ Component }">
+      <Transition name="route" mode="out-in">
+        <component :is="Component"></component>
+      </Transition>
+    </RouterView>
+    <footer-section />
   </main>
 </template>
 
 <script>
-import TheHeader from "@/components/Layout/AppHeaderSection.vue";
-import HeroSection from "@/components/Layout/AppHeroSection.vue";
-import AboutSection from "@/components/Layout/AppAboutSection.vue";
-import SkillsSection from "@/components/Layout/AppSkillsSection.vue";
-import ProjectSection from "@/components/Layout/AppProjectSection.vue";
-import ContactForm from "@/components/Layout/AppContactForm.vue";
+import TheHeader from "@/components/UI/HeaderSection.vue";
+import { RouterView } from "vue-router";
 export default {
   components: {
     TheHeader,
-    HeroSection,
-    AboutSection,
-    SkillsSection,
-    ProjectSection,
-    ContactForm,
+    RouterView,
   },
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style>
+.route-enter-from,
+.route-leave-to {
+  opacity: 0;
+}
+
+.route-enter-active,
+.route-leave-active {
+  transition: opacity 0.3s ease-out;
+}
+</style>

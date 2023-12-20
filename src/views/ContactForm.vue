@@ -1,5 +1,8 @@
 <template>
-  <section class="container py-20" id="contact">
+  <section
+    class="container flex h-screen flex-col justify-center py-20"
+    id="contact"
+  >
     <div class="mb-8">
       <sub-heading> contact </sub-heading>
     </div>

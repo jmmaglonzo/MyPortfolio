@@ -1,7 +1,7 @@
 <template>
-  <section class="container py-20">
+  <section class="container md:pt-48">
     <div
-      class="flex flex-col items-center justify-center space-y-3 text-white md:space-y-4"
+      class="flex h-screen flex-col items-center justify-center space-y-3 text-white md:h-1/2 md:space-y-4"
     >
       <span class="text-sm font-semibold uppercase text-primaryRed md:text-xl"
         >crafting code with creativity</span
@@ -10,17 +10,21 @@
         {{ typedText }}
       </h1>
       <span class="text-md uppercase md:text-lg"> front-end developer </span>
-      <base-button
-        class="flex items-center gap-2 border border-secondaryGrey"
-        href="#about"
-        >about me
-        <Icon
-          icon="tdesign:chevron-down"
-          class="h-5 w-5 animate-pulse text-primaryRed"
-        />
-      </base-button>
+      <router-link :to="{ name: 'About' }">
+        <base-button
+          class="mb-10 flex items-center gap-2 border border-secondaryGrey"
+          href="#about"
+          >about me
+          <Icon
+            icon="tdesign:chevron-down"
+            class="h-5 w-5 animate-pulse text-primaryRed"
+          />
+        </base-button>
+      </router-link>
+      <div class="">
+        <social-links />
+      </div>
     </div>
-    <social-links />
   </section>
 </template>
 

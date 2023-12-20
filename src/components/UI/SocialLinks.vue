@@ -1,5 +1,5 @@
 <template>
-  <div class="mt-72 flex items-center justify-center gap-4 text-white md:mt-24">
+  <div class="flex items-center justify-center gap-4 text-white">
     <a
       :href="items.links"
       target="_blank"

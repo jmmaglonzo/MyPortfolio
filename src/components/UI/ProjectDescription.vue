@@ -9,7 +9,7 @@
       <slot name="description"> </slot>
     </base-card>
 
-    <div class="flex justify-center gap-4 text-sm md:justify-start">
+    <div class="flex justify-center gap-2 text-xs md:justify-start">
       <slot name="technologies"> </slot>
     </div>
 
@@ -24,5 +24,3 @@
 <script>
 export default {};
 </script>
-
-<style lang="scss" scoped></style>

@@ -11,6 +11,7 @@ export default {
         lightMode: "#EBEBEB",
         formColor: "#161925",
         cardsColor: "#2b2c35",
+        footerColor: "#13141f",
       },
       fontFamily: {
         sans: ["Fira Code", "monospace"],

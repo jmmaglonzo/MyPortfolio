@@ -1,5 +1,8 @@
 <template>
-  <section class="container py-20" id="skills">
+  <section
+    class="container flex flex-col justify-center py-20 md:h-screen"
+    id="skills"
+  >
     <sub-heading>Tech Arsenal for Web Development </sub-heading>
     <grid-skills />
   </section>

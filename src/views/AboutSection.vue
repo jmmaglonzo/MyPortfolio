@@ -1,5 +1,5 @@
 <template>
-  <section id="about" class="container py-20">
+  <section id="about" class="container h-screen py-20">
     <sub-heading> About </sub-heading>
 
     <div
@@ -18,7 +18,7 @@
       </div>
 
       <div class="order-1 flex flex-col items-center md:order-2">
-        <img src="../../assets/img/hero.svg" class="h-80 w-80" />
+        <img src="../assets/img/hero.svg" class="h-80 w-80" />
 
         <base-button
           class="bg-primaryRed"

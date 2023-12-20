@@ -1,5 +1,5 @@
 <template>
-  <section class="container py-20" id="projects">
+  <section class="container relative py-20" id="projects">
     <div>
       <sub-heading>projects</sub-heading>
       <span class="block text-center text-base text-white md:text-lg"
@@ -15,12 +15,13 @@
           <project-description>
             <template #title>Portfolio website</template>
             <template #description
-              >Welcome to my portfolio powered by Vite and Vue.js and Tailwind.
+              >Welcome to my portfolio powered by Vite,Vue.js and Tailwind.
               Discover my responsive projects, explore skills, and let's discuss
               collaboration possibilities for a modern user experience.
             </template>
             <template #technologies>
               <p>VUE JS</p>
+              <p>VUE ROUTER</p>
               <p>TAILWIND</p>
               <p>VITE</p>
               <p>JAVASCRIPT</p>
@@ -36,9 +37,9 @@
           </project-description>
         </div>
 
-        <div class="order-1 duration-200 hover:-translate-y-6 md:order-2">
+        <div class="order-1 duration-200 md:order-2 md:hover:-translate-y-6">
           <a href="https://omnifoods-ai.netlify.app/" target="_blank">
-            <img src="../../assets/img/mockups/portfolio.png" alt="" />
+            <img src="../assets/img/mockups/portfolio.png" alt="" />
           </a>
         </div>
       </div>
@@ -71,9 +72,9 @@
           </project-description>
         </div>
 
-        <div class="order-1 duration-200 hover:-translate-y-6 md:order-1">
+        <div class="order-1 duration-200 md:order-1 md:hover:-translate-y-6">
           <a href="https://omnifoods-ai.netlify.app/" target="_blank">
-            <img src="../../assets/img/mockups/omnifood.png" alt="" />
+            <img src="../assets/img/mockups/omnifood.png" alt="" />
           </a>
         </div>
       </div>
@@ -106,9 +107,9 @@
           </project-description>
         </div>
 
-        <div class="order-1 duration-200 hover:-translate-y-6 md:order-2">
+        <div class="order-1 duration-200 md:order-2 md:hover:-translate-y-6">
           <a href="https://omnifoods-ai.netlify.app/" target="_blank">
-            <img src="../../assets/img/mockups/hj.png" alt="" />
+            <img src="../assets/img/mockups/hj.png" alt="" />
           </a>
         </div>
       </div>
@@ -143,9 +144,9 @@
           </project-description>
         </div>
 
-        <div class="order-1 duration-200 hover:-translate-y-6 md:order-1">
+        <div class="order-1 duration-200 md:order-1 md:hover:-translate-y-6">
           <a href="https://omnifoods-ai.netlify.app/" target="_blank">
-            <img src="../../assets/img/mockups/clipboard.png" alt="" />
+            <img src="../assets/img/mockups/clipboard.png" alt="" />
           </a>
         </div>
       </div>
@@ -154,10 +155,5 @@
 </template>
 
 <script>
-import ProjectDescription from "@/components/UI/ProjectDescription.vue";
-export default {
-  components: {
-    ProjectDescription,
-  },
-};
+export default {};
 </script>
