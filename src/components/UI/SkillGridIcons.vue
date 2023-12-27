@@ -82,9 +82,13 @@
     </base-card>
 
     <base-card class="duration-200 md:hover:scale-110">
-      <img src="../../assets/img/icons/mysql.png" alt="" class="h-10 md:h-14" />
+      <img
+        src="../../assets/img/icons/github-mark-white.svg"
+        alt=""
+        class="h-10 md:h-14"
+      />
 
-      <span class="text-sm"> MYSQL </span>
+      <span class="text-sm"> GitHub</span>
     </base-card>
   </div>
 </template>

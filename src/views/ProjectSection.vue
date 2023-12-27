@@ -27,10 +27,13 @@
               <p>JAVASCRIPT</p>
             </template>
             <template #links>
-              <a href="">
+              <a
+                href="https://github.com/jmmaglonzo/MyPortfolio"
+                target="_blank"
+              >
                 <Icon icon="mdi:github" />
               </a>
-              <a href="">
+              <a href="lonzo.vercel.app" target="_blank">
                 <Icon icon="ph:link-bold" />
               </a>
             </template>
@@ -38,7 +41,7 @@
         </div>
 
         <div class="order-1 duration-200 md:order-2 md:hover:-translate-y-6">
-          <a href="https://omnifoods-ai.netlify.app/" target="_blank">
+          <a href="lonzo.vercel.app" target="_blank">
             <img src="../assets/img/mockups/portfolio.png" alt="" />
           </a>
         </div>
@@ -62,10 +65,13 @@
               <p>SASS</p>
             </template>
             <template #links>
-              <a href="">
+              <a
+                href="https://github.com/jmmaglonzo/OmnifoodProject"
+                target="_blank"
+              >
                 <Icon icon="mdi:github" />
               </a>
-              <a href="">
+              <a href="https://omnifoods-ai.netlify.app/" target="_blank">
                 <Icon icon="ph:link-bold" />
               </a>
             </template>
@@ -87,20 +93,21 @@
           <project-description>
             <template #title>hj layout & designs</template>
             <template #description
-              >Omnifood AI, my Bootstrap and Sass project. With redesigned and
-              new sections, I've revamped this site to offer a fresh and
-              improved experience.
+              >Developed using Vue.js for dynamic interactivity, Vue Router for
+              seamless navigation, and Tailwind CSS for a modern, visually
+              appealing design.
             </template>
             <template #technologies>
-              <p>HTML</p>
-              <p>BOOTSTRAP</p>
-              <p>SASS</p>
+              <p>VUE JS</p>
+              <p>VUE ROUTER</p>
+              <p>VITE</p>
+              <p>TAILWIND</p>
             </template>
             <template #links>
-              <a href="">
+              <a href="https://github.com/jmmaglonzo/HJLD" target="_blank">
                 <Icon icon="mdi:github" />
               </a>
-              <a href="">
+              <a href="https://hjld.vercel.app/" target="_blank">
                 <Icon icon="ph:link-bold" />
               </a>
             </template>
@@ -108,13 +115,12 @@
         </div>
 
         <div class="order-1 duration-200 md:order-2 md:hover:-translate-y-6">
-          <a href="https://omnifoods-ai.netlify.app/" target="_blank">
-            <img src="../assets/img/mockups/hj.png" alt="" />
+          <a href="https://hjld.vercel.app/" target="_blank">
+            <img src="../assets/img/mockups/Group 3.png" alt="" />
           </a>
         </div>
       </div>
       <!-- Project 4 -->
-
       <div
         class="mt-14 flex flex-col gap-10 md:mt-20 md:flex-row md:items-center"
       >
@@ -131,13 +137,22 @@
               <p>TAILWINDCSS</p>
             </template>
             <template #links>
-              <a href="">
+              <a
+                href="https://github.com/jmmaglonzo/Clipboard-Landing-Page"
+                target="_blank"
+              >
                 <Icon icon="mdi:github" />
               </a>
-              <a href="">
+              <a
+                href="https://stellar-dieffenbachia-5892e1.netlify.app/"
+                target="_blank"
+              >
                 <Icon icon="ph:link-bold" />
               </a>
-              <a href="">
+              <a
+                href="https://www.frontendmentor.io/solutions/clipboard-landing-page-kxIdakcKOo"
+                target="_blank"
+              >
                 <Icon icon="simple-icons:frontendmentor" />
               </a>
             </template>
@@ -145,7 +160,10 @@
         </div>
 
         <div class="order-1 duration-200 md:order-1 md:hover:-translate-y-6">
-          <a href="https://omnifoods-ai.netlify.app/" target="_blank">
+          <a
+            href="https://stellar-dieffenbachia-5892e1.netlify.app/"
+            target="_blank"
+          >
             <img src="../assets/img/mockups/clipboard.png" alt="" />
           </a>
         </div>

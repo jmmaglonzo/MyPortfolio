@@ -1,17 +1,36 @@
 import { createRouter, createWebHistory } from "vue-router";
 
-import Home from "@/views/HeroSection.vue";
-import Skills from "@/views/SkillSection.vue";
-import Project from "@/views/ProjectSection.vue";
-import Contact from "@/views/ContactForm.vue";
-import About from "@/views/AboutSection.vue";
-
 const routes = [
-  { name: "Home", path: "/", component: Home },
-  { name: "Skills", path: "/Skills", component: Skills },
-  { name: "Projects", path: "/Project", component: Project },
-  { name: "Contact", path: "/Contact", component: Contact },
-  { name: "About", path: "/About", component: About },
+  {
+    name: "Home",
+    path: "/",
+    component: () =>
+      import(/* webpackChunkName: "home" */ "@/views/HeroSection.vue"),
+  },
+  {
+    name: "Skills",
+    path: "/Skills",
+    component: () =>
+      import(/* webpackChunkName: "SKills" */ "@/views/SkillSection.vue"),
+  },
+  {
+    name: "Projects",
+    path: "/Project",
+    component: () =>
+      import(/* webpackChunkName: "Project" */ "@/views/ProjectSection.vue"),
+  },
+  {
+    name: "Contact",
+    path: "/Contact",
+    component: () =>
+      import(/* webpackChunkName: "Contact" */ "@/views/ContactForm.vue"),
+  },
+  {
+    name: "About",
+    path: "/About",
+    component: () =>
+      import(/* webpackChunkName: "About" */ "@/views/AboutSection.vue"),
+  },
 ];
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),

@@ -48,7 +48,7 @@ export default {
         this.currentIndex++;
 
         if (this.currentIndex === this.textToType.length) {
-          clearInterval(intervalId); // Stop typing when the end of the string is reached
+          clearInterval(intervalId);
         }
       }, this.typingSpeed);
     },
