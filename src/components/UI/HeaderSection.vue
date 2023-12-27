@@ -1,6 +1,7 @@
 <template>
   <header class="fixed left-0 top-0 z-50 w-full bg-bodyColor shadow-md">
     <nav
+      ref="navigation"
       class="container flex justify-between gap-8 p-4 md:flex-row md:items-center md:gap-0"
     >
       <router-link
@@ -30,7 +31,7 @@
 
       <!-- Mobile Menu -->
       <div
-        class="text-md absolute top-14 flex h-screen w-1/2 flex-col gap-8 bg-bodyColor p-4 uppercase text-white shadow-lg duration-700 ease-in-out md:hidden"
+        class="text-md absolute top-16 flex h-screen w-1/2 flex-col gap-8 bg-bodyColor p-4 uppercase text-white shadow-sm shadow-black duration-700 ease-in-out md:hidden"
         :class="menuBar"
       >
         <router-link :to="{ name: 'Home' }" @click="closeMenu">
@@ -70,10 +71,25 @@ export default {
     openMenu() {
       this.isOpen = !this.isOpen;
       this.rotateDegree = this.isOpen ? 180 : 0;
+      this.addDocumentClickListener();
     },
     closeMenu() {
       this.isOpen = false;
-      this.rotateDegree = this.isOpen ? 180 : 0;
+      this.rotateDegree = 0;
+      this.removeDocumentClickListener();
+    },
+    addDocumentClickListener() {
+      document.addEventListener("touchstart", this.handleDocumentTouch);
+    },
+    removeDocumentClickListener() {
+      document.removeEventListener("touchstart", this.handleDocumentTouch);
+    },
+    handleDocumentTouch(event) {
+      const navigation = this.$refs.navigation;
+
+      if (navigation && !navigation.contains(event.target)) {
+        this.closeMenu();
+      }
     },
   },
   computed: {

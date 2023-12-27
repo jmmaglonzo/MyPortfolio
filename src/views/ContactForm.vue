@@ -30,7 +30,7 @@
         </div>
         <ul class="flex flex-col gap-2">
           <li
-            class="flex items-center gap-2"
+            class="flex items-center justify-center gap-2 md:justify-normal"
             v-for="(contact, index) in contactLinks"
             :key="index"
           >
@@ -46,7 +46,6 @@
       </div>
 
       <div class="flex flex-col space-y-2 text-white md:w-full">
-        <!-- <div class="flex flex-col gap-2 md:flex-row md:gap-4"> -->
         <div class="grid grid-cols-1 gap-2 md:grid-cols-2 md:gap-4">
           <input
             :type="input.type"
