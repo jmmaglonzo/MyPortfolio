@@ -31,7 +31,7 @@
 
       <!-- Mobile Menu -->
       <div
-        class="text-md absolute top-16 flex h-screen w-1/2 flex-col gap-8 bg-bodyColor p-4 uppercase text-white shadow-sm shadow-black duration-700 ease-in-out md:hidden"
+        class="text-md absolute top-16 flex h-screen w-[65%] flex-col gap-8 bg-bodyColor p-4 uppercase text-white shadow-sm shadow-black duration-700 ease-in-out md:hidden"
         :class="menuBar"
       >
         <router-link :to="{ name: 'Home' }" @click="closeMenu">

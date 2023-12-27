@@ -35,7 +35,7 @@ const routes = [
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes,
-  linkExactActiveClass: "border-b border-b-2 border-primaryRed",
+  linkExactActiveClass: "border-b border-b-2 border-primaryRed animate-pulse",
 });
 
 export default router;
