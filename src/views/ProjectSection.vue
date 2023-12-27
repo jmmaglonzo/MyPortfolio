@@ -33,7 +33,7 @@
               >
                 <Icon icon="mdi:github" />
               </a>
-              <a href="lonzo.vercel.app" target="_blank">
+              <a href="https://lonzo.vercel.app/" target="_blank">
                 <Icon icon="ph:link-bold" />
               </a>
             </template>
@@ -41,7 +41,7 @@
         </div>
 
         <div class="order-1 duration-200 md:order-2 md:hover:-translate-y-6">
-          <a href="lonzo.vercel.app" target="_blank">
+          <a href="https://lonzo.vercel.app/" target="_blank">
             <img src="../assets/img/mockups/portfolio.png" alt="" />
           </a>
         </div>
