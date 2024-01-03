@@ -22,7 +22,7 @@
 
         <base-button
           class="bg-primaryRed"
-          href="https://drive.google.com/file/d/1nEaQQ4iN_9n4F7H5m1cnZ1Wb072HXUCg/view"
+          href="https://drive.google.com/file/d/1TpVn919uaIMCu37OB-_Bx7CiFTVOC2_j/view?usp=sharing"
           target="_blank"
         >
           download cv
